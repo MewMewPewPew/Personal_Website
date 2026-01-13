@@ -1,0 +1,230 @@
+body {
+    font-family: "Xanh Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-variation-settings: "wdth" 100;
+    padding: 0;
+    margin: 0;
+    font-style: normal;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+#wrapper {
+    margin-top: 10px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.logo {
+    text-align: left;
+
+}
+
+.logo img {
+    width: auto;
+    height: 100px;
+}
+
+nav {
+
+    margin-top: 0px;
+    margin-left: -50px;
+    display: grid;
+    grid-template-columns: 20% 1fr;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: rgb(154, 248, 72);
+}
+
+.hover-text {
+    font-family: "BBH Sans Bartle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    opacity: 0;
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    background-color: black;
+    padding: 8px;
+    border-radius: 10px;
+    color: #ffffff;
+    transition: opacity 0.3s ease;
+}
+
+
+.menu1 {
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu1 a {
+    display: block;
+}
+
+.menu a:hover {
+    color: gray;
+}
+
+.menuI {
+    text-align: right;
+    color: gray;
+}
+
+.hamburger-menu {
+    display: none;
+    /*hidden by default, will be shown on mobile*/
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger-menu button {
+    background: none;
+    border: none;
+    font-size: 2em;
+    /*size of the hamburger icon*/
+    color: gray;
+}
+
+.hamburger-menu button .fa-bars {
+    cursor: pointer;
+}
+
+.close-menu {
+    display: none;
+}
+
+
+footer {
+    margin-top: 20px;
+    min-height: 30px;
+    font-size: 10px;
+    font-weight: lighter;
+    text-align: right;
+    font-style: italic;
+}
+
+footer a {
+    text-decoration: none;
+    color: black
+}
+
+@media (max-width: 1024px) {
+
+
+    .hamburger-menu {
+        display: flex;
+        /*ensure the burger is visible and aligned*/
+        align-items: center;
+        /*Center the button vertically in the header*/
+    }
+
+    .menu1 {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        /*ensure the menu is abode other elemennts */
+    }
+
+    .menu1 a {
+        padding: 20px;
+        /*increase padding to space out elements*/
+    }
+
+    .menu1 a,
+    .menu a:hover {
+        text-decoration: none;
+        color: gray;
+        background-color: transparent;
+    }
+
+    .close-menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2em;
+        color: gray;
+    }
+
+    .menu-deployed {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+        z-index: 1000;
+        padding-top: 50px;
+
+    }
+
+    button {
+        border-width: 0px;
+        background-color: white;
+    }
+
+    nav {
+        margin: 0 auto;
+        margin-bottom: 50px;
+        margin-left: 0px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 20px;
+        line-height: 30px;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        border-bottom: 4px solid rgb(184, 184, 184);
+        background: rgb(0, 0, 0);
+        z-index: 1000;
+        color: aliceblue;
+
+    }
+
+    nav a {
+
+        color: rgb(0, 0, 0);
+    }
+
+
+    #wrapper {
+        margin-top: 50px;
+        position: relative;
+        width: 90%;
+        margin: 0 auto;
+        float: none;
+    }
+
+    footer {
+        margin-top: 40px;
+        font-size: 12 px;
+    }
+
+    
+}
