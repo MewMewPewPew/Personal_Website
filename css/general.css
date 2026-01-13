@@ -104,7 +104,12 @@ nav a:hover {
 .close-menu {
     display: none;
 }
-
+/* home */
+.homeHeader img {
+    margin-left: 40%;
+    width: 800px;
+    
+}
 
 footer {
     margin-top: 20px;
