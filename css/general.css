@@ -16,20 +16,23 @@ body {
     margin-right: auto;
     margin-left: auto;
 }
-.logo {
+#logo {
     text-align: left;
 
 }
 
-.logo img {
+#logo img {
+    /* background-image: ('../assets/logoBlack.png'); */
     width: auto;
     height: 100px;
 }
+#logo:hover img {
+    opacity: 0.5;
+}
 
 nav {
-
     margin-top: 0px;
-    margin-left: -50px;
+    /* margin-left: -10px; */
     display: grid;
     grid-template-columns: 20% 1fr;
 
@@ -45,7 +48,7 @@ nav a:hover {
     color: rgb(248, 72, 195);
 }
 
-.hover-text {
+/* .hover-text {
     font-family: "BBH Sans Bartle", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -59,29 +62,153 @@ nav a:hover {
     border-radius: 10px;
     color: #ffffff;
     transition: opacity 0.3s ease;
-}
-
+} */
 
 .menu1 {
     display: flex;
     background-color: white;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: center ;
+    /* margin-left: -100px; */
+    /* padding-left: 5%; */
+    
+}
+#selected{
+    color: black;
+}
+#selected2{
+    color: rgb(248, 72, 195);
 }
 
 .menu1 a {
-    display: block;
+    /* display: block; */
+    /* opacity: 0.2; */
+    /* pointer-events: none; */
+    /* position: absolute;
+    top: 7%;
+    left: 0%; */
+    /* background-color: aquamarine; */
+    /* border-radius: 0.5rem;
+    padding: 0.5rem; */
+    color: gray;
+    /* transition: all.3s ease;   */
 }
 
-.menu a:hover {
+/* .menuI a:hover {
+    color: gray;
+     pointer-events: all;
+} */
+ul, li {
+    list-style-type: none;
+}
+
+ul.menuI {
+    display: flex;
+    cursor: pointer;
+    position: relative;
     color: gray;
 }
-
-.menuI {
-    text-align: right;
-    color: gray;
+ul.menuI li{
+    display: flex-start;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 3.5rem;
+    
+}
+/* ul.menuI div{
+    position: flex;
+} */
+ul.menuI .submenuI{
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    margin-left: -41px;
+    transition: all.5s ease;  
+}
+.about:hover .submenuI{
+    opacity: 1;
+    pointer-events: all;
+}
+ul.menuI .submenuII{
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    margin-left: -41px;
+    transition: all.5s ease;  
+}
+.portfolio:hover .submenuII{
+    opacity: 1;
+    pointer-events: all;
+}
+ul.menuI .submenuIII{
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    margin-left: -41px;
+    transition: all.5s ease;  
+}
+.music:hover .submenuIII{
+    opacity: 1;
+    pointer-events: all;
+    z-index: 2;
+}
+ul.menuI .submenuIIII{
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    margin-left: -41px;
+    transition: all.5s ease;  
+}
+.project:hover .submenuIIII{
+    opacity: 1;
+    pointer-events: all;
+    z-index: 1;
+}
+/*
+ul.submenuIII {
+    opacity: 0.2;
+    pointer-events: none;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    
+}
+ul.submenuIIII {
+    opacity: 0.2;
+    pointer-events: none;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    
+}
+ul.submenuI a {
+    /* color:blueviolet; 
+    padding: 0.5rem;
+    border-radius: 0.5 rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
+#about:hover ul.aboutS{
+    /* position: absolute; 
+    opacity: 1;
+    pointer-events: all;
+}
+#porfolio:hover .porfolioS{
+    opacity: 1;
+    pointer-events: all;
+}
+#music:hover .musicS{
+    opacity: 1;
+    pointer-events: all;
+}
+#project:hover .projectS{
+    opacity: 1;
+    pointer-events: all;
+} */
 .hamburger-menu {
     display: none;
     /*hidden by default, will be shown on mobile*/
@@ -104,6 +231,8 @@ nav a:hover {
 .close-menu {
     display: none;
 }
+
+
 /* home */
 .homeMain {
     color: black;
@@ -144,18 +273,54 @@ nav a:hover {
     background-color: aquamarine;
     
 } */
+/* Contact */
+.contactMain a {
+    text-decoration: none;
+    color: black
+}
+.social{
+    padding-right: 20px;
+}
+.socialC{
+    /* display: flex; */
+    /* flex-direction: column; */
+    padding-right: 20px;
+    padding-left: 120px;
+    text-align: left;
+    font-size: 25px;
+}
+.collunmC{
+    display: flex;
+    /* flex-direction: column; */
+}
+.asciiC{
+    padding-left: 420px;
+    margin-top: -20px;
+}
+.iconC{
+    margin-top: -100px;
+}
+/* footer */
 footer {
-    margin-top: 20px;
+    padding-top: 8px;
     min-height: 30px;
-    font-size: 10px;
+    font-size: 18px;
     font-weight: lighter;
     text-align: right;
     font-style: italic;
+    padding-bottom: 20px;
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+}
+footer em {
+    color: gray;
+    font-size: 11px;
 }
 
 footer a {
     text-decoration: none;
-    color: black
+    color: rgb(255, 255, 255)
 }
 
 @media (max-width: 1024px) {

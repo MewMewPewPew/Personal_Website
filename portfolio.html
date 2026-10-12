@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Meta Description for SEO-->
+    <meta name="Portfolio" content="website">
+
+    <!--Author and Copyright-->
+    <meta name="Ash" content="st4sh">
+    <meta name="copyright" content="Tasha, 2026">
+
+    <title>Portfolio</title>
+
+    <!--External Stylesheet-->
+    <link rel="stylesheet" href="css/general.css">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- Link to social media Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <!--Navigation-->
+            <nav>
+                <div class="logo">
+                    <a href="#"><img src="assets/logoBlack.png" alt="st4sh" ></a>
+                    <!-- make the img go to home.html ? -->
+                </div>
+                <div class="menu1">
+                    <button class="close-menu">&times;</button>
+
+                    <a href="home.html" class="menuI">HOME</a>
+                    <a href="about.html" class="menuI">ABOUT</a>
+                    <a href="portfolio.html" class="menuI_active">PORTFOLIO</a>
+                    <a href="digital.html" class="menuI">DIGITAL</a>
+                    <a href="analog.html" class="menuI">ANALOG</a>
+                    <a href="performance.html" class="menuI">PERFORMANCE</a>
+                    <a href="music.html" class="menuI">MUSIC</a>
+                    <a href="more.html" class="menuI">MORE</a>
+                    <a href="contact.html" class="menuI">CONTACT</a>
+                </div>
+                <!-- Hamburger menu button for mobile version-->
+                <div class="hamburger-menu">
+                    <button>
+                        <span class="fa fa-bars"></span>
+                    </button>
+
+                </div>
+            </nav>
+        </header>
+
+<!--script for the hamburger menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerButton = document.querySelector('.hamburger-menu button');
+            const closeButton = document.querySelector('.close-menu');
+            const menu1 = document.querySelector('.menu1');
+
+            // Gestion de l'ouverture du menu
+            hamburgerButton.addEventListener('click', () => {
+                menu1.classList.add('menu-deployed');
+            });
+
+            // Gestion de la fermeture du menu
+            closeButton.addEventListener('click', () => {
+                menu1.classList.remove('menu-deployed');
+            });
+        });
+    </script>
+    </div> 
+    <!-- wrapper  -->
+</body>
