@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Meta Description for SEO-->
+    <meta name="home" content="website">
+
+    <!--Author and Copyright-->
+    <meta name="Ash" content="st4sh">
+    <meta name="copyright" content="Tasha, 2026">
+
+    <title>Home</title>
+
+    <!--External Stylesheet-->
+    <link rel="stylesheet" href="css/general.css">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- Link to social media Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<!-- MAKE A FRENCH VERSION É? -->
+<body>
+     <div id="wrapper">
+        <header>
+            <!--Navigation-->
+            <nav>
+                <div id="logo">
+                    <a href="$.html"><img src="assets/logo4SH-Pink.png" alt="st4sh" ></a>
+                    <!-- make the img go to home.html ? -->
+                </div>
+                <div class="menu1">
+                    <button class="close-menu">&times;</button>
+
+                    <!-- <li><a href="home.html" id="selected">HOME</a></li> -->
+                    <ul class="menuI">
+                        <div class="about">
+                        <li><a href="about.html" >ABOUT</a></li>
+                            <ul class="submenuI" >
+                                <li><a href="contact.html" >CONTACT</a></li>
+                            </ul>
+                        </div>
+                        <div class="portfolio">
+                        <li><a href="portfolio.html" >PORTFOLIO</a></li>
+                            <ul class="submenuII">
+                                <li><a href="illustration.html" >ILLUSTRATION</a></li>
+                                <li><a href="performance.html" >PERFORMANCE</a></li>
+                                <li><a href="analog.html" >ANALOG</a></li>
+                                <li><a href="digital.html" >DIGITAL</a></li>
+                                <li><a href="model.html" >MODELLING</a></li>
+                            </ul>
+                        </div>
+                        <div class="music">
+                        <li > <a href="music.html" id="selected">MUSIC</a></li>
+                            <ul class="submenuIII" >
+                                <li><a href="music.html" >ST4SH</a></li>
+                                <li><a href="music.html" >DJ</a></li>
+                                <!-- <li><a href="st4sh.html" >ST4SH</a></li>
+                                <li><a href="dj.html" >DJ</a></li> -->
+                            </ul>
+                        </div> 
+                        <div class="project">
+                        <li ><a href="projects.html" >PROJECTS</a></li>
+                            <ul class="submenuIIII">
+                                <li><a href="art.html" >ART</a></li>
+                                <li><a href="sketches.html" >SKETCHES</a></li>
+                                <li><a href="games.html" >GAMES</a></li>
+                            </ul>
+                        </div> 
+                    </ul>
+                </div>
+                <!-- Hamburger menu button for mobile version-->
+                <div class="hamburger-menu">
+                    <button>
+                        <span class="fa fa-bars"></span>
+                    </button>
+
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="m-temp">
+                <h2>This page is under construction</h2>
+                <p>I'll soon put my Dj remixes available on soundcloud
+                    <!-- <br>& I love to play bass, piano, guitar, accordeon and to sing -->
+                 <br>but! feel free to explore old music I made as <em>St4sh</em>
+                </p>
+                <div class="evilstream">
+                    <div>
+                        <iframe data-testid="embed-iframe" style="border-radius:12px; width: 400px;" src="https://open.spotify.com/embed/artist/3mO2k90bbI5GNuhdLPeFDz?utm_source=generator&si=272b4cb233154548" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                    <div>
+                        <div class="iframely-embed"><div class="iframely-responsive" style="padding-bottom: 52.5%; padding-top: 120px; padding-left: 194px; "><a href="https://music.apple.com/ng/artist/st4sh/1246699951" data-iframely-url="https://iframely.net/ymL6Q4Jj?theme=light"></a></div></div><script async src="https://iframely.net/embed.js"></script>
+                    </div>
+                </div>
+                <img src="assets/logo.png" >
+            </div>
+        </main>
+        
+
+    </div>
+    <!--Footer-->
+    <footer>
+        <div class="social">
+
+            <p>Contact me by <a href="mailto:digitalst4sh@gmail.com">email</a> for any inquiries and projects ☆</p>
+            <div>
+                <a href="mailto:digitalst4sh@gmail.com"> <img src="assets/mailB.png" width="30px"> </a> 
+                <a href="https://www.instagram.com/mewmewpewpew_/"><img src="assets/instaB.png" width="30px"> </a>  
+            </div>
+            <small><em>This website was created by me. All content and design are copyrighted</em></small>
+        </div>
+    </footer>
+
+    <!--script for the hamburger menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerButton = document.querySelector('.hamburger-menu button');
+            const closeButton = document.querySelector('.close-menu');
+            const menu1 = document.querySelector('.menu1');
+
+            // Gestion de l'ouverture du menu
+            hamburgerButton.addEventListener('click', () => {
+                menu1.classList.add('menu-deployed');
+            });
+
+            // Gestion de la fermeture du menu
+            closeButton.addEventListener('click', () => {
+                menu1.classList.remove('menu-deployed');
+            });
+        });
+    </script>
+</body>

@@ -29,22 +29,47 @@
         <header>
             <!--Navigation-->
             <nav>
-                <div class="logo">
-                    <a href="#"><img src="assets/logoBlack.png" alt="st4sh" ></a>
+                <div id="logo">
+                    <a href="$.html"><img src="assets/logo4SH-Pink.png" alt="st4sh" ></a>
                     <!-- make the img go to home.html ? -->
                 </div>
                 <div class="menu1">
                     <button class="close-menu">&times;</button>
 
-                    <a href="home.html" class="menuI">HOME</a>
-                    <a href="about.html" class="menuI">ABOUT</a>
-                    <a href="portfolio.html" class="menuI_active">PORTFOLIO</a>
-                    <a href="digital.html" class="menuI">DIGITAL</a>
-                    <a href="analog.html" class="menuI">ANALOG</a>
-                    <a href="performance.html" class="menuI">PERFORMANCE</a>
-                    <a href="music.html" class="menuI">MUSIC</a>
-                    <a href="more.html" class="menuI">MORE</a>
-                    <a href="contact.html" class="menuI">CONTACT</a>
+                    <!-- <li><a href="home.html" id="selected">HOME</a></li> -->
+                    <ul class="menuI">
+                        <div class="about">
+                        <li><a href="about.html"  >ABOUT</a></li>
+                            <ul class="submenuI" >
+                                <li><a href="contact.html" >CONTACT</a></li>
+                            </ul>
+                        </div>
+                        <div class="portfolio">
+                        <li><a href="portfolio.html" id="selected" >PORTFOLIO</a></li>
+                            <ul class="submenuII">
+                                <li><a href="illustration.html" >ILLUSTRATION</a></li>
+                                <li><a href="performance.html" >PERFORMANCE</a></li>
+                                <li><a href="analog.html" >ANALOG</a></li>
+                                <li><a href="digital.html" >DIGITAL</a></li>
+                                <li><a href="model.html" >MODELLING</a></li>
+                            </ul>
+                        </div>
+                        <div class="music">
+                        <li > <a href="music.html" >MUSIC</a></li>
+                            <ul class="submenuIII" >
+                                <!-- <li><a href="st4sh.html" >ST4SH</a></li>
+                                <li><a href="dj.html" >DJ</a></li> -->
+                            </ul>
+                        </div> 
+                        <div class="project">
+                        <li ><a href="projects.html" >PROJECTS</a></li>
+                            <ul class="submenuIIII">
+                                <li><a href="art.html" >ART</a></li>
+                                <li><a href="sketches.html" >SKETCHES</a></li>
+                                <li><a href="games.html" >GAMES</a></li>
+                            </ul>
+                        </div> 
+                    </ul>
                 </div>
                 <!-- Hamburger menu button for mobile version-->
                 <div class="hamburger-menu">
@@ -55,7 +80,23 @@
                 </div>
             </nav>
         </header>
+        
+        <main>
 
+        </main>
+    </div> 
+    <!--Footer-->
+    <footer>
+        <div class="social">
+
+            <p>Contact me by <a href="mailto:digitalst4sh@gmail.com">email</a> for any inquiries and projects ☆</p>
+            <div>
+                <a href="mailto:digitalst4sh@gmail.com"> <img src="assets/mailB.png" width="30px"> </a> 
+                <a href="https://www.instagram.com/mewmewpewpew_/"><img src="assets/instaB.png" width="30px"> </a>  
+            </div>
+            <small><em>This website was created by me. All content and design are copyrighted</em></small>
+        </div>
+    </footer>  
 <!--script for the hamburger menu -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -74,6 +115,5 @@
             });
         });
     </script>
-    </div> 
     <!-- wrapper  -->
 </body>
