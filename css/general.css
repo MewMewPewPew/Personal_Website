@@ -240,6 +240,30 @@ ul.menuI .submenuIIII{
     margin-top: -20px;
 }
 /* Portfolio */
+/* illustration */
+.i-titleBox{
+    display: flex;
+    position: relative;
+}
+.i-title{
+    position: fixed;
+    margin-left: 20px;
+    /* top: 50%;
+    width: 100%; */
+}
+.i-title H2 {
+    color: var(--green);
+    font-size: 40px;
+}
+.i-title a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    
+}
+#img1{
+    width: 100%;
+}
 /* Music */
 .evilstream{
     display: flex;

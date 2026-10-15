@@ -24,4 +24,6 @@ links for codings used:
 - animation name (css): https://cssreference.io/property/animation-name/
 - filter ref (css): https://drafts.csswg.org/filter-effects-1/#FilterProperty 
 - blur filter (css): https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/filter-function/blur
+
 - PDF viewing(not used yet): https://www.nutrient.io/blog/open-pdf-in-your-web-app/
+-sticky absolute(css): https://stackoverflow.com/questions/5581034/is-there-a-way-to-make-a-child-divs-width-wider-than-the-parent-div-using-css 
